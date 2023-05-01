@@ -1,4 +1,6 @@
 import java.util.EmptyStackException;
 import java.util.LinkedList;
-public class MyLinkedListStack {
+public class MyLinkedListStack<T> {
+    private LinkedList<T> stack;
+
 }
