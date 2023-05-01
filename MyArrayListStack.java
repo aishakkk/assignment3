@@ -5,6 +5,10 @@ public class MyArrayListStack<T> {
     public MyArrayListStack() {
         stack = new ArrayList<>();
     }
+    public void push(T data) {
+        stack.add(data);
+    }
+
 
 
 }
