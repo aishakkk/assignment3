@@ -21,6 +21,10 @@ public class MyArrayListStack<T> {
         }
         return stack.get(stack.size() - 1);
     }
+    public boolean isEmpty() {
+        return stack.isEmpty();
+    }
+
 
 
 
