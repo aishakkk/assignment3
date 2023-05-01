@@ -5,7 +5,20 @@ public class MyLinkedListStack<T> {
     public MyLinkedListStack() {
         stack = new LinkedList<>();
     }
+
+    /**
+     *
+     * @param data
+     */
     public void push(T data) {
         stack.addFirst(data);
     }
+
+    public T pop() {
+        if (stack.isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return stack.removeFirst();
+    }
+
 }
