@@ -29,5 +29,9 @@ public class MyLinkedListStack<T> {
     public boolean isEmpty() {
         return stack.isEmpty();
     }
+    public int size() {
+        return stack.size();
+    }
+
 
 }
