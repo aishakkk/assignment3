@@ -8,4 +8,7 @@ public class MyLinkedListQueue<T> {
     public void enqueue(T item) {
         myList.addFirst(item);
     }
+    public T dequeue() {
+        return myList.removeFirst();
+    }
 }
