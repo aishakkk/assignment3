@@ -11,4 +11,7 @@ public class MyLinkedListQueue<T> {
     public T dequeue() {
         return myList.removeFirst();
     }
+    public T peek() throws NoSuchElementException {
+        return myList.getFirst();
+    }
 }
