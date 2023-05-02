@@ -12,6 +12,7 @@ public class MyLinkedListQueue<T> {
         return myList.removeFirst();
     }
     public T peek() throws NoSuchElementException {
+        isEmptyThrowException();
         return myList.getFirst();
     }
     public boolean isEmpty() {
@@ -19,5 +20,10 @@ public class MyLinkedListQueue<T> {
     }
     public int size() {
         return myList.size();
+    }
+    private void isEmptyThrowException() throws NoSuchElementException {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
     }
 }
