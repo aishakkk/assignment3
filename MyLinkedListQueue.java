@@ -14,4 +14,7 @@ public class MyLinkedListQueue<T> {
     public T peek() throws NoSuchElementException {
         return myList.getFirst();
     }
+    public boolean isEmpty() {
+        return myList.isEmpty();
+    }
 }
